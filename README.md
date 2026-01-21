@@ -59,4 +59,99 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 =======
 # TECHNICAL-TEST---JUNIOR-FULLSTACK-DEVELOPER
->>>>>>> 2459e3801914524c65c3640e79923b3ca5d7705a
+
+Aplikasi Web Inventaris
+
+Technical Test – Junior Fullstack Developer
+
+Aplikasi web sederhana berbasis Laravel 12 untuk mengelola inventaris barang, transaksi penjualan, dan manajemen user dengan role.
+
+🚀 Teknologi yang Digunakan
+- Laravel 12
+- PHP 8+
+- MySQL
+- Blade Template
+- JavaScript (Fetch API)
+- CSS (Custom)
+
+Cara Instalasi dan Set Up Database ke Lokal:
+1️⃣ Clone Repository
+
+git clone https://github.com/azizulweb/TECHNICAL-TEST---JUNIOR-FULLSTACK-DEVELOPER.git
+cd Aplikasi-Web-Inventaris
+
+2️⃣ Install Dependency
+
+composer install
+
+3️⃣ Setup Environment
+
+Copy file .env.example menjadi .env:
+cp .env.example .env
+
+php artisan key:generate
+
+4️⃣ Setup Database
+
+Sesuaikan konfigurasi database di file .env:
+
+DB_DATABASE=aplikasi_web_inventaris
+DB_USERNAME=root
+DB_PASSWORD=
+
+5️⃣ Migrasi & Seeder
+
+Jalankan migration dan seeder:
+php artisan migrate --seed
+
+6️⃣ Jalankan Server
+
+php artisan serve
+http://127.0.0.1:8000
+
+
+
+📌 Fitur yang Telah Diimplementasikan
+🔹 Sistem Inventaris
+- Menampilkan daftar produk
+- Menambah produk baru
+- Edit & update data produk
+- Hapus produk
+- Transaksi penjualan (barang keluar)
+- Validasi backend & frontend agar stok tidak pernah negatif
+
+Highlight stok:
+- Stok = 0 → merah
+- Stok < 5 → kuning
+- Sorting stok dari terendah
+- Empty state & loading indicator
+
+🔹 Manajemen User (User Management)
+- Menampilkan daftar user beserta role
+- Relasi User ↔ Role (Foreign Key)
+- Ganti role user (Admin / Seller / Customer)
+- Validasi role hanya ke nilai yang valid
+
+🔹 API Endpoint
+
+Produk
+- GET /api/products
+- POST /api/products
+- POST /api/products/{id}/sell
+- PUT /api/products/{id}
+- 
+User
+- GET /api/users
+- PUT /api/users/{id}/change-role
+
+🧠 Catatan Teknis
+- Struktur mengikuti konsep MVC Laravel
+- Validasi dilakukan di backend & frontend
+- Relasi database menggunakan foreign key
+- Error handling ditampilkan ke user (alert)
+
+👨‍💻 Author
+
+Azizul
+Technical Test – Junior Fullstack Developer
+
