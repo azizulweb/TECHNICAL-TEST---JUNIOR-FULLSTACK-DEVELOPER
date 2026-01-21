@@ -102,6 +102,7 @@ DB_PASSWORD=
 5️⃣ Migrasi & Seeder
 
 Jalankan migration dan seeder:
+
 php artisan migrate --seed
 
 6️⃣ Jalankan Server
