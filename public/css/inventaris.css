@@ -1,0 +1,246 @@
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 24px;
+    background-color: #0f172a; /* dark navy */
+    color: #ffffff;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* BRAND */
+.nav-brand {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* MENU */
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #cbd5f5;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: all 0.2s ease;
+}
+
+/* HOVER */
+.nav-link:hover {
+    color: #ffffff;
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* ACTIVE (OPSIONAL MANUAL) */
+/* .nav-link.active {
+    color: #ffffff;
+    border-bottom: 2px solid #38bdf8;
+} */
+
+
+
+/* =========================
+   INVENTARIS LAYOUT
+   ========================= */
+
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f1f5f9;
+    margin: 0;
+}
+
+.inventaris-container {
+    display: flex;
+    gap: 24px;
+    padding: 24px;
+}
+
+/* FORM */
+.form-produk {
+    width: 28%;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.form-produk h3 {
+    margin-bottom: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 8px;
+}
+
+.form-produk input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+.form-produk input:focus {
+    border-color: #2563eb;
+    outline: none;
+}
+
+.btn-primary {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #1e40af;
+}
+
+.btn-edit {
+    background: #facc15;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.btn-delete {
+    background: #ef4444;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+.btn-sell {
+    background: #22c55e;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+}
+
+
+.inventaris-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* =========================
+   FORM TAMBAH PRODUK (KIRI)
+   ========================= */
+
+.form-produk {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-produk h4 {
+    margin-bottom: 10px;
+}
+
+.form-produk input {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.form-produk button {
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+/* =========================
+   TABEL PRODUK (KANAN)
+   ========================= */
+
+.table-produk {
+    width: 70%;
+    background: #ffffff;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* TABLE */
+.table-produk table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    font-size: 14px;
+}
+
+/* HEADER */
+.table-produk thead {
+    background-color: #f8fafc;
+}
+
+.table-produk th {
+    padding: 12px;
+    text-align: left;
+    color: #334155;
+    font-weight: 600;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+/* BODY */
+.table-produk td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    color: #1f2937;
+}
+
+/* ROW HOVER */
+.table-produk tbody tr:hover {
+    background-color: #f1f5f9;
+}
+
+/* CENTER KHUSUS KOLOM ANGKA */
+.table-produk td:nth-child(2),
+.table-produk td:nth-child(3),
+.table-produk td:nth-child(4) {
+    text-align: center;
+}
+
+
+/* =========================
+   UX TAMBAHAN
+   ========================= */
+
+button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* =========================
+   STOCK INDICATOR
+   ========================= */
+
+.stock-low {
+    color: #000000;
+    background-color: #fff3cd;
+}
+
+.stock-empty {
+    color: #000000;
+    background-color: #f8d7da;
+}
+
